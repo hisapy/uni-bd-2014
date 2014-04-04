@@ -36,3 +36,5 @@ La entrega de los trabajos se hará mediante el sistema de [pull requests](https
 
 En la sección [issues](https://github.com/hisapy/uni-bd-2014/issues) de este repositorio, los [milestones](https://github.com/hisapy/uni-bd-2014/issues/milestones) representarán cada uno de los trabajos prácticos y cada issue dentro de un *milestone* representará una tarea a realizar para completar dicho trabajo. La mayoría de los trabajos serán individuales, pero cuando corresponda se indicará si el trabajo es grupal.
 
+Todos los archivos entregados por los alumnos deberán tener encoding utf-8.
+
