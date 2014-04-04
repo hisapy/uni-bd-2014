@@ -28,7 +28,7 @@ Luego para verificar que realmente se tenga acceso para **fetch** del nuevo remo
 Para sincronizar sus respectivos repositorios con bd2014, primero tendrán que bajar el árbol de dicho remote.
 > git fetch bd2014
 
-Y luego hacer el **git merge branch_remote branch_local** del branch correspondiente a su branch local. Si el branch local aún no existe, pueden crearlo y luego hacer el **git merge branch_remote branch_local** correspondiente. Por último para subir sus cambios a sus respectivos repositorios, tendrán que ejecutar el comando **git push**. Estos últmos comandos varían según elijan subir un solo branch, todos los branches, y también pueden depender del remote a cual quieren subir sus cambios, por lo tanto deberán investigar para tener la información exacta.
+Y luego hacer el **git merge** del branch correspondiente a su branch local. Si el branch local aún no existe, pueden crearlo y luego hacer el **git merge**. Por último para subir sus cambios a sus respectivos repositorios, tendrán que ejecutar el comando **git push**. Estos últmos comandos (_git merge_ y _git push_) varían según elijan subir un solo branch, todos los branches, y también pueden depender del remote a cual quieren subir sus cambios, por lo tanto deberán investigar para tener la información exacta.
 
 La entrega de los trabajos se hará mediante el sistema de **pull request** disponible en GitHub. Una vez que hayan subido sus trabajos a sus respectivos repositorios en sus cuentas de GitHub, irán al repositorio https://github.com/hisapy/uni-bd-2014 y presionar el botón **pull request**. También deberán investigar al respecto sobre como administrar el código (o los trabajos prácticos) con esta clase de flujo de trabajo.
 
