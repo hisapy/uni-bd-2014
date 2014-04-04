@@ -15,7 +15,7 @@ Para poder realizar el proceso o flujo de trabajo, el alumno deberá previamente
 6. Subir su clave SSH a su cuenta de [github.com](http://github.com)
 7. Agregar este repositorio como un remote adicional a su **origin**
 
-Todos los pasos mencionados más arriba muy fáciles de lograrlos y pueden encontrar suficiente información en Internet al respecto.
+Todos los pasos mencionados más arriba son muy fáciles de lograrlos y pueden encontrar suficiente información en Internet al respecto.
 
 En https://help.github.com/articles/generating-ssh-keys enlace pueden ver como generar una clave SSH y subirla su cuenta de [github.com](http://github.com).
 
