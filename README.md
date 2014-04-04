@@ -8,7 +8,7 @@ Este repositorio será utilizado para la publicación, seguimiento y entrega de 
 Para poder realizar el proceso o flujo de trabajo, el alumno deberá previamente:
 
 1. Crear una cuenta en este sitio [github.com](http://github.com)
-2. Hacer fork de este repositorio, observarlo (watch)
+2. Hacer fork de este repositorio, observarlo (watch) para recibir notificaciones cada vez que se actualiza el mismo
 3. Instalar git en su localhost
 4. Clonar el repositorio a su localhost
 5. Generar la clave SSH que utilizarán para subir los cambios a su repositorio
