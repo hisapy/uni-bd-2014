@@ -9,7 +9,7 @@ Todos.Todo.FIXTURES = [ {
 	isCompleted : true
 }, {
 	id : 2,
-	title : '...',
+	title : 'Aprender IndexedDB',
 	isCompleted : false
 }, {
 	id : 3,
