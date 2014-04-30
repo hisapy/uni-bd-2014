@@ -9,7 +9,7 @@
 		<script type="text/x-handlebars" data-template-name="todos">
 			<section id="todoapp">
 				<header id="header">
-					<h1>todos</h1>
+					<h1>TodoMVC App</h1>
 					{{input type="text" id="new-todo" placeholder="What needs to be done?" value=newTitle action="createTodo"}}
 				</header>
 
@@ -21,7 +21,7 @@
       								{{edit-todo class="edit" value=title focus-out="acceptChanges" insert-newline="acceptChanges"}}
 							    {{else}}
 							      	{{input type="checkbox" checked=isCompleted class="toggle"}}
-							    	<label {{action "editTodo" on="doubleClick"}}>{{title}}</label><button class="destroy"></button>
+							    	<label {{action "editTodo" on="doubleClick"}}>{{title}}</label><button {{action "removeTodo"}} class="destroy"></button>
 							    {{/if}}
 						  	</li>
 						{{/each}}
