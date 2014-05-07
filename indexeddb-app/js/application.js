@@ -12,10 +12,11 @@ Todos.ApplicationAdapter = DS.IndexedDBAdapter.extend({
 		                'Learn from databases in general as much as possible'
 		                ];
 		for ( var i = 0; i < subjects.length; i++) {
-			store.createRecord('todo', {
+			var todo = store.createRecord('todo', {
 				title : subjects[i],
 				isCompleted : false
 			});
+			todo.save();
 		}
 
 	}
