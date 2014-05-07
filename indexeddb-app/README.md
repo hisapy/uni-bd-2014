@@ -4,7 +4,7 @@
 
 ### Introduction
 
-This is an introduction to Javascript apps with offline database using IndexedDB API and EmberJS. Moreover, this is an example of a non-SQL or non-relational database. It's up to the student to make a further research about related subjects such as WebSQL, libraries to manipulate DOM, libraries to abstract underlying device platform, libraries to enforce design patterns, synchronization with cloud and so on.
+This is an introduction to Javascript apps with offline database using IndexedDB API and Ember.js. Moreover, this is an example of a non-SQL or non-relational database. It's up to the student to make a further research about related subjects such as WebSQL, libraries to manipulate DOM, libraries to abstract underlying device platform, libraries to enforce design patterns, synchronization with cloud and so on.
 
 ### About the App
 
