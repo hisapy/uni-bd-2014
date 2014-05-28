@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ember-TODO</title>
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/bootstrap.css">
+	</head>
+	<body>
+
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <a class="navbar-brand" href="#">BD</a>
+	  <ul class="nav navbar-nav">
+	    <li>
+	      <a href="../index.html">Home</a>
+	    </li>
+	    <li class="active">
+	      <a href="../views/todo.html">todo</a>
+	    </li>
+	  </ul>
+	</nav>
+
+	<script type="text/x-handlebars">
+	    {{outlet}}
+	</script>
+
+
+	<script type="text/x-handlebars" id="index">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6">  <!-- header de la lista de contactos -->
+                <div class="panel panel-default">
+                    <div class="panel-heading c-list">
+                        <span class="title">To Do List</span>
+                        <ul class="pull-right c-controls">
+                            <li><a href="#cant-do-all-the-work-for-you" data-toggle="tooltip" data-placement="top" title="Add something to do"><i class="glyphicon glyphicon-plus"></i></a></li> <!-- boton de agregar contactos -->
+                        </ul>
+                    </div>
+                    
+                    <ul class="list-group" id="contact-list"> <!-- lista de contactos -->
+                    {{#each item in model}}
+                        <li class="list-group-item">
+                            <div class="col-xs-12 col-sm-12">
+                                <span class="name">{{item}}</span><br/>
+                                 <div class="pull-right c-controls">
+                                    <span class="glyphicon glyphicon-ok c-info" data-toggle="tooltip" title="Ya has terminado esta tarea?"></span>
+                                    <span class="glyphicon glyphicon-edit c-info" data-toggle="tooltip" title="Editar"></span>
+                                    <span class="glyphicon glyphicon-remove c-info" data-toggle="tooltip" title="Borrar tarea?"></span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <div class="panel-footer">items left
+
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+                  <ul class="pagination">
+                  <li><a href="#">&laquo;</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">&raquo;</a></li>
+                </ul>
+                </div>
+              </div>
+
+          </div>
+
+
+
+            <!-- modal con el formulario para agregar un contacto -->
+            <div id="cant-do-all-the-work-for-you" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="mySmallModalLabel">Add something to do</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                            	<input type="text" class="form-control" id="" placeholder="What needs to be done?">
+                            </div>
+                            	<button type="submit" class="btn btn-primary">Add</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- modal con el formulario para agregar un contacto -->
+      </div>
+	</script>
+
+  <script src="../js/libs/jquery-1.10.2.js"></script>
+  <script src="../js/libs/bootstrap.js"></script>
+  <script src="../js/libs/handlebars-1.1.2.js"></script>
+  <script src="../js/libs/ember-1.5.1.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/aplication.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="../tests/runner.js"></script>
+	</body>
